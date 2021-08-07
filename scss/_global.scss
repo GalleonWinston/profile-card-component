@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "kumbh Sans", "sans serif";
+    font-size: 18px;
+    background-color: $darkCyan;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 325px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &--header {
+        background-image: url(../images/bg-pattern-card.svg);
+        height: 140px;
+    }
+
+    &--body {
+        border-bottom: 1px solid $darkGray;
+        
+        .img--holder {
+            background-image: url(../images/image-victor.jpg);
+            background-size: contain;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 6px solid white;
+            margin: -53px auto 24px;
+        }
+       
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+            padding-bottom: 14px;
+            color: $veryDarkDesaturatedBlue;
+
+            span {
+                font-weight: 400;
+            }
+        }
+
+        h4 {
+            font-size: 16px;
+            font-weight: 400;
+            padding-bottom: 24px;
+        }
+    }
+
+    &--footer {
+        display: flex;
+        padding: 24px 0px;
+        align-items: center;
+        justify-content: space-around;
+
+        &__stats {
+            min-width: 100px;
+            
+            h4 {
+                padding-bottom: 11px;
+            }
+
+            h5 {
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@media (min-width: 1080px) {
+    .card {
+        width: 350px; 
+    }
+}
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
